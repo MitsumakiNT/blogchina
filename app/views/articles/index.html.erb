@@ -15,28 +15,15 @@
 
 <h1>Latest Blogs</h1>
 <div class = "main_articles">
-  <table>
-    <thead>
-      <tr>
-        <th></th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
+    
 
     <tbody>
       <% @articles.each do |article| %>
-        <div class="margin1"></div>
-        <tr>
-        
-          <td><%= article.title %></td>
-          <td><%= link_to 'Show', article %></td>
-        
-        </tr>
-          
-          
+        <div class="margin1">
+          <%= article.title %><%= link_to 'Show', article %>
+        </div>
       <% end %>
     </tbody>
-  </table>
 </div>
 
 <br>
