@@ -10,6 +10,9 @@
 // images in galleries will be squished by the max-width: 33%; rule.
 .trix-content {
   line-height: 2em;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
   blockquote {
     border-bottom: 1.5px solid #ddd;
     font-size: 1.6em;
