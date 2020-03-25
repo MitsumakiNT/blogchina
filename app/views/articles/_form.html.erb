@@ -11,18 +11,18 @@
     </div>
   <% end %>
 
-  <div class = "images">
-    <%= form.label :画像 %>
+  <div class = "image">
+    <%= form.label :サムネイル %>
     <%= form.file_field :image, accept: "image/png, image/jpeg, image/gif"%>
   </div>
 
   <div class="field">
-    <%= form.label :title %>
+    <%= form.label :タイトル %>
     <%= form.text_field :title %>
   </div>
 
   <div class="field">
-    <%= form.label :content %>
+    <%= form.label :記事 %>
     <%= form.rich_text_area :content %>
   </div>
 

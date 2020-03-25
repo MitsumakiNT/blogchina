@@ -61,5 +61,4 @@ gem 'pry-rails' #binding.pry
 gem 'kaminari' #ページネーション
 gem 'sprockets'
 gem 'actiontext'
-gem 'mini_magick'
 gem 'font-awesome-sass'

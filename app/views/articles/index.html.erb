@@ -21,7 +21,14 @@
     
       <% @articles.each do |article| %>
         <div class="margin1">
+          <%= image_tag article.image.variant(resize_to_fill:[400,200],crop:("400x200+0+0")).processed, class:'img-fluid' if article.image.attached? %>
+          <div class="article_title">
           <%= article.title %><%= link_to 'Show', article %>
+          </div>
+          <div class="post_time">
+          <%= article.created_at.to_s(:datetime_jp) %>
+          <%= article.updated_at.to_s(:datetime_jp) %>
+          </div>
         </div>
       <% end %>
     
@@ -30,7 +37,7 @@
 
 <br>
 
-<a class="top_scroll" href="#"><span>Scroll</span></a>
+<a class="top_scroll" href="#"><span>Top</span></a>
 
 <%= link_to 'New Article', new_article_path %>
 
