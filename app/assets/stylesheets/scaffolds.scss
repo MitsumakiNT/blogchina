@@ -13,6 +13,8 @@ body, p, ol, ul, td {
   font-family:"Microsoft Yahei","PingHei" ,"sans-serif";
 }
 
+
+
 header{
   background-color:black;
   height: 60px;
@@ -36,6 +38,8 @@ header{
 }
 
 .main_articles{
+  padding-top: 10px;
+  padding-bottom: 20px;
   background-color: white;
   padding-left: 100px;
   width: 75vw;
@@ -86,9 +90,12 @@ table{
 
 .margin1{
   margin-top: 40px;
-  width:  50%;
+  padding-top: 15px;
+  padding-left: 15px;
+  width:  55%;
   height: 300px;
   background-color: red;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.56);
 }
 
 
