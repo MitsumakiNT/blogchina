@@ -1,7 +1,10 @@
 body {
-  background-color: white;
+  background-color: whitesmoke;
   color: #333;
-  margin: 1px; }
+  margin: 1px; 
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -33,8 +36,9 @@ header{
 }
 
 .main_articles{
+  background-color: white;
   padding-left: 100px;
-  width: 75%;
+  width: 75vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -48,6 +52,7 @@ h1 {
   margin-right: auto;
   font-weight: lighter;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.56);
+  background-color: white;
 }
 
 ul.main_menu{
