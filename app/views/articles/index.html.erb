@@ -23,10 +23,13 @@
           </div>
           <div class="details">
             <div class="article_title">
-              <%= article.title %><%= link_to 'Show', article %>
+              <%= article.title %>
             </div>
             <div class="post_time">
               <%= article.created_at.to_s(:datetime_jp) %>
+            </div>
+            <div class="show">
+              <%= link_to 'Show', article %>
             </div>
           </div>
         </div>
