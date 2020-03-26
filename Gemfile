@@ -54,7 +54,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'ransack' #検索機能
-gem 'acts-as-taggable-on' #タグ機能
 gem 'devise' #サイト内検索
 gem 'carrierwave' #画像アップロード
 gem 'pry-rails' #binding.pry
