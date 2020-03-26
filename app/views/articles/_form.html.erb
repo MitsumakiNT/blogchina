@@ -16,6 +16,11 @@
     <%= form.file_field :image, accept: "image/png, image/jpeg, image/gif"%>
   </div>
 
+  <div class="tag">
+    <%= form.label :タグ%>
+    <%= form.text_field :tag_name, value: @tag_list%>
+  </div>
+
   <div class="field">
     <%= form.label :タイトル %>
     <%= form.text_field :title %>

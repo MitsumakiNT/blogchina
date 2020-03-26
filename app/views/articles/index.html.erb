@@ -4,6 +4,10 @@
   <div class = "top_button"><a href = "#" id = "top_btn">this is blog</a></div>
 </header>
 
+<% @map_list.each do |list| %>
+  <%= link_to list.tag_name,articles_path(map_id:list.id)%><%= list.articles.count %>
+<% end %>
+
 
 <div class="container">
   <ul class="main_menu">
