@@ -4,9 +4,6 @@
   <div class = "top_button"><a href = "#" id = "top_btn">this is blog</a></div>
 </header>
 
-<% @map_list.each do |list| %>
-  <%= link_to list.tag_name,articles_path(map_id:list.id)%><%= list.articles.count %>
-<% end %>
 
 
 <div class="container">
@@ -46,6 +43,13 @@
 <a class="top_scroll" href="#"><span>Top</span></a>
 
 <%= link_to 'New Article', new_article_path %>
+
+<div class="tags">
+<% @map_list.each do |list| %>
+  <%= link_to list.tag_name,articles_path(map_id:list.id)%><%= list.articles.count %>
+<% end %>
+</div>
+
 
 <div class="pageman"><%= paginate @articles%></div>
 

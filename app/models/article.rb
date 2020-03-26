@@ -4,6 +4,9 @@ class Article < ApplicationRecord
   has_many :mapguides, dependent: :destroy
   has_many :maps, through: :mapguides
 
+
+#実質articles_controllerに定義したメソッド
+
   def save_articles(maps)
     current_maps = self.maps.pluck(:tag_name) unless self.maps.nil?
     old_maps = current_maps - maps
