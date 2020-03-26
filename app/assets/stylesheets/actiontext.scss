@@ -10,7 +10,7 @@
 // images in galleries will be squished by the max-width: 33%; rule.
 .trix-content {
   line-height: 2em;
-  width: 75%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   
@@ -58,10 +58,17 @@
 }
 
 h1{
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
 .field{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom{
   margin-left: auto;
   margin-right: auto;
 }

@@ -96,6 +96,10 @@ table{
   height: 300px;
   background-color: red;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.56);
+  display: flex;
+  .details{
+    
+  }
 }
 
 
@@ -159,4 +163,6 @@ label {
 .pagination{
   justify-content: center;
 }
+
+
 
