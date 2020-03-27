@@ -21,7 +21,7 @@
       <% @articles.each do |article| %>
         <div class="margin1">
           <div class="imager">
-            <%= image_tag article.image.variant(resize_to_fill:[270,270],crop:("300x300+0+0")).processed, class:'img-fluid' if article.image.attached? %>
+            <%= image_tag article.image.variant(resize_to_fill:[270,270],crop:("270x270+0+0")).processed, class:'img-fluid' if article.image.attached? %>
           </div>
           <div class="details">
             <p class="article_title">
@@ -64,7 +64,7 @@
         </div>
       </div>
       <div class="content_2">
-        <a class="top_scroll" href="#"><span>Top</span></a>
+        
       </div>
       <div class="content_3">
         <h4>tag list</h4>
