@@ -37,9 +37,7 @@ header{
   
 }
 
-.wrapper{
-  display: flex;
-}
+
 
 .main_articles{
   padding-top: 10px;
@@ -51,7 +49,6 @@ header{
   margin-right: auto;
   font-family: 'SignPainter',sans-serif;
   position: relative;
-  .margin1{
     .details{
       .article_title{
         // position: absolute;
@@ -70,8 +67,9 @@ header{
         margin-top: 100px;
       }
     }
-  }
 }
+
+
 
 h1 {
   font-family: 'SignPainter',sans-serif;
@@ -193,5 +191,52 @@ label {
   border: none;
 }
 
-
+footer{
+  height: 400px;
+  width: 100vw;
+  .foot_wrapper{
+    background-color: white;
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    border: solid 1px gray;
+    .content_1{
+      width: 35vw;
+      padding-top: 5em;
+      background-color: white;
+      border: solid 1px gray;
+      h3{
+        font-family: 'SignPainter',sans-serif;
+        font-size: 50px;
+        text-align: center;
+      }
+      p{
+        text-align: center;
+        font-size: 16px;
+      }
+      .introduce{
+        margin-top: 3em;
+        margin-right: 3em;
+        margin-left: 3em;
+      }
+    }
+    .content_2{
+      border: solid 1px gray;
+      width: 30vw;
+    }
+    .content_3{
+      padding-top: 5em;
+      border: solid 1px gray;
+      width: 35vw;
+      h4{
+        font-family: 'SignPainter',sans-serif;
+        font-size: 50px;
+        text-align: center;
+        .tag_list{
+          
+        }
+      }
+    }
+  }
+}
 

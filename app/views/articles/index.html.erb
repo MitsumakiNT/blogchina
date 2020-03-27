@@ -15,42 +15,60 @@
   </div>
 
   <h1>Latest Blogs</h1>
-  <div class = "wrapper">
+  
     <div class = "main_articles">
       <% @articles.each do |article| %>
         <div class="margin1">
           <div class="imager">
-            <%= image_tag article.image.variant(resize_to_fill:[300,270],crop:("300x300+0+0")).processed, class:'img-fluid' if article.image.attached? %>
+            <%= image_tag article.image.variant(resize_to_fill:[270,270],crop:("300x300+0+0")).processed, class:'img-fluid' if article.image.attached? %>
           </div>
           <div class="details">
-            <div class="article_title">
+            <p class="article_title">
               <span><%= article.title %></span>
-            </div>
-            <div class="post_time">
+            </p>
+            <p class="post_time">
               <%= article.created_at.to_s(:datetime_jp) %>
-            </div>
-            <div class="show_btn">
+            </p>
+            <p class="show">
               <%= link_to '続きをみる', article %>
-            </div>
+            </p>
           </div>
         </div>
       <% end %>
     </div>
-    <div class="tags">
-    <h3>タグリスト</h3>
-      <% @map_list.each do |list| %>
-        <%= link_to list.tag_name,articles_path(map_id:list.id)%><%= list.articles.count %>
-      <% end %>
-    </div>
-  </div>
-
   
+
+<br>
 
   <a class="top_scroll" href="#"><span>Top</span></a>
 
   <%= link_to 'New Article', new_article_path %>
 
+  
+
+
+
   <div class="pageman"><%= paginate @articles%></div>
-
-
+  
+  <footer>
+    <div class="foot_wrapper">
+      <div class="content_1">
+        <h3>this is blog</h3>
+        <p>ruby on rails</p>
+        <div class="introduce">
+        もう入校してから40日経ちました。時が経つのは早いものですね。このブログは後々自分の備忘録を兼ねたアウトプットの場として大いに使っていく予定です。
+        </div>
+      </div>
+      <div class="content_2">
+      </div>
+      <div class="content_3">
+        <h4>tag list</h4>
+        <div class="tag_list">
+          <% @map_list.each do |list| %>
+            <%= link_to list.tag_name, articles_path(map_id:list.id)%><%= list.articles.count %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
