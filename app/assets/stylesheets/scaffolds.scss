@@ -223,6 +223,12 @@ footer{
     .content_2{
       border: solid 1px gray;
       width: 30vw;
+      position: relative;
+      .my_image{
+        margin-top: 5em;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
     .content_3{
       padding-top: 5em;
