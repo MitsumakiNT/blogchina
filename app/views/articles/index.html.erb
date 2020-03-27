@@ -1,22 +1,22 @@
 <body>
 
-<header>
-  <div class = "top_button"><a href = "#" id = "top_btn">this is blog</a></div>
-</header>
+  <header>
+    <div class = "top_button"><a href = "#" id = "top_btn">this is blog</a></div>
+  </header>
 
 
 
-<div class="container">
-  <ul class="main_menu">
-    <li><a href="#" id="travel-btn">Travel</a></li>
-    <li><a href="#" id="stady-btn">Stady</a></li>
-    <li><a href="#" id="hobby-btn">Hobby</a></li>
-  </ul>
-</div>
+  <div class="container">
+    <ul class="main_menu">
+      <li><a href="#" id="travel-btn">Travel</a></li>
+      <li><a href="#" id="stady-btn">Stady</a></li>
+      <li><a href="#" id="hobby-btn">Hobby</a></li>
+    </ul>
+  </div>
 
-<h1>Latest Blogs</h1>
-<div class = "wrapper">
-  <div class = "main_articles">
+  <h1>Latest Blogs</h1>
+  <div class = "wrapper">
+    <div class = "main_articles">
       <% @articles.each do |article| %>
         <div class="margin1">
           <div class="imager">
@@ -24,34 +24,33 @@
           </div>
           <div class="details">
             <div class="article_title">
-              <%= article.title %>
+              <span><%= article.title %></span>
             </div>
             <div class="post_time">
               <%= article.created_at.to_s(:datetime_jp) %>
             </div>
-            <div class="show">
-              <%= link_to 'Show', article %>
+            <div class="show_btn">
+              <%= link_to '続きをみる', article %>
             </div>
           </div>
         </div>
       <% end %>
+    </div>
+    <div class="tags">
+    <h3>タグリスト</h3>
+      <% @map_list.each do |list| %>
+        <%= link_to list.tag_name,articles_path(map_id:list.id)%><%= list.articles.count %>
+      <% end %>
+    </div>
   </div>
-</div>
 
-<br>
+  
 
-<a class="top_scroll" href="#"><span>Top</span></a>
+  <a class="top_scroll" href="#"><span>Top</span></a>
 
-<%= link_to 'New Article', new_article_path %>
+  <%= link_to 'New Article', new_article_path %>
 
-<div class="tags">
-<% @map_list.each do |list| %>
-  <%= link_to list.tag_name,articles_path(map_id:list.id)%><%= list.articles.count %>
-<% end %>
-</div>
-
-
-<div class="pageman"><%= paginate @articles%></div>
+  <div class="pageman"><%= paginate @articles%></div>
 
 
 </body>

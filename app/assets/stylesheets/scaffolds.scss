@@ -37,14 +37,40 @@ header{
   
 }
 
+.wrapper{
+  display: flex;
+}
+
 .main_articles{
   padding-top: 10px;
   padding-bottom: 20px;
   background-color: white;
   padding-left: 100px;
-  width: 75vw;
+  width: 65vw;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'SignPainter',sans-serif;
+  position: relative;
+  .margin1{
+    .details{
+      .article_title{
+        // position: absolute;
+        font-family: 'Kaiti SC',sans-serif;
+        font-size: xx-large;
+        padding-top: 20%;
+        padding-left: 20px;
+        
+      }
+      .post_time{
+        text-align: center;
+      }
+      .show_btn{
+        position: absolute;
+        margin-left: 50px;
+        margin-top: 100px;
+      }
+    }
+  }
 }
 
 h1 {
@@ -92,14 +118,10 @@ table{
   margin-top: 40px;
   padding-top: 15px;
   padding-left: 15px;
-  width:  55%;
+  width:  65%;
   height: 300px;
-  background-color: red;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.56);
   display: flex;
-  .details{
-    
-  }
 }
 
 
@@ -160,8 +182,15 @@ div.actions {
 label {
   display: block; }
 
+.tags {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
 .pagination{
   justify-content: center;
+  border: none;
 }
 
 
