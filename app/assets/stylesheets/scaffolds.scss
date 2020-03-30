@@ -42,13 +42,13 @@ header{
   padding-top: 10px;
   padding-bottom: 20px;
   background-color: white;
-  padding-left: 100px;
   width: 65vw;
   margin-left: auto;
   margin-right: auto;
   font-family: 'SignPainter',sans-serif;
   position: relative;
     .details{
+      width: 25vw;
       .article_title{
         // position: absolute;
         font-family: 'Kaiti SC',sans-serif;
@@ -115,10 +115,17 @@ table{
   margin-top: 40px;
   padding-top: 15px;
   padding-left: 15px;
-  width:  65%;
+  margin-left: auto;
+  margin-right: auto;
+  width:  70%;
   height: 300px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.56);
   display: flex;
+  .show{
+    margin-top: 3em;
+    text-align: center;
+    font-size: large;
+  }
 }
 
 
@@ -225,11 +232,19 @@ footer{
     .content_2{
       border: solid 1px gray;
       width: 30vw;
-      position: relative;
-      .my_image{
-        margin-top: 5em;
-        margin-left: auto;
-        margin-right: auto;
+      padding-top: 5em;
+      h3{
+        font-family: 'SignPainter',sans-serif;
+        font-size: 50px;
+        text-align: center;
+      }
+      .myphoto{
+        text-align: center;
+      }
+      .BG{
+        padding-top: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
       }
     }
     .content_3{
