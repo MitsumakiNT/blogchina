@@ -1,6 +1,6 @@
 body {
   background-color: whitesmoke;
-  background-image: image("DSC_0228.jpg");
+  background-image: url(https://www.pakutaso.com/shared/img/thumb/hongkongDSC04754_TP_V.jpg);
   color: #333;
   margin: 1px; 
   background-attachment: fixed;
@@ -36,6 +36,9 @@ header{
 #top_btn{
   color: white;
 }
+
+
+  
 
 
 
@@ -122,6 +125,9 @@ table{
   height: 300px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.56);
   display: flex;
+  .post_time{
+    font-size: large;
+  }
   .show{
     margin-top: 3em;
     text-align: center;
