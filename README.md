@@ -6,6 +6,7 @@
  2. Activestorageとgem`carrierwave`を用いたサムネイル昨日の実装
  3. gem`devise`を用いたログイン機能の実装
  4. gem`acts-as-taggable-on`を**用いない**タグ機能の実装
+ 5. scssを使った装飾
 
 
 Things you may want to cover:
