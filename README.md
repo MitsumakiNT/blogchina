@@ -1,11 +1,11 @@
 # ブログアプリ
 
 ## 概要
-> ### このアプリ制作を通して学んだこと
->> Rails6で実装されたActiontextというテキストエディターを使ってみること　
-<br> Activestorageを用いたサムネイル昨日の実装
-<br> deviseを用いたログイン機能の実装
-
+> ###  このアプリ制作を通して学んだこと
+ 1. Rails6で実装されたActiontextというテキストエディターを使ってみること　
+ 2. Activestorageとgem`carrierwave`を用いたサムネイル昨日の実装
+ 3. gem`devise`を用いたログイン機能の実装
+ 4. gem`acts-as-taggable-on`を**用いない**タグ機能の実装
 
 
 Things you may want to cover:
