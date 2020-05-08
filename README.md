@@ -1,7 +1,12 @@
-# README
+# ブログアプリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
+> ### このアプリ制作を通して学んだこと
+>> Rails6で実装されたActiontextというテキストエディターを使ってみること　
+<br> Activestorageを用いたサムネイル昨日の実装
+<br> deviseを用いたログイン機能の実装
+
+
 
 Things you may want to cover:
 
