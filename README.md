@@ -17,6 +17,7 @@
 ## 制作背景
 > ブログアプリを通してフロントからサーバーサイドまでの技術理解を満遍なく深めるために作成した。
 
+
 ## データベース設計
 ### Articlesテーブル
 |Column|Type|Options|
@@ -25,6 +26,12 @@
 |body|text||
 |status|integer|null: false|
 |time|datetime||
+
+### Association
+ - has_one_attached :image
+ - has_rich_text :content
+ - has_many :mapguides, dependent: :destroy
+ - has_many :maps, through: :mapguides
 
 ### Activestorage_blobsテーブル
 |Column|Type|Options|
@@ -62,4 +69,13 @@
 |category_id|integer||
 
 ### Mapsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|tag_name|string||
+
+### Mapguidesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|article_id|integer||
+|map_id|integer||
 
