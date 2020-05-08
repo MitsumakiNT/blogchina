@@ -8,23 +8,13 @@
  4. gem`acts-as-taggable-on`を**用いない**タグ機能の実装
  5. scssを使った装飾
 
+## 使用した技術
+* 言語: Html/SCSS/Ruby 2.5.1/SQL
+* FW:  Ruby on Rails
+* DB: MySQL
+* デプロイ環境: Heroku
 
-Things you may want to cover:
+## 制作背景
+> ブログアプリを通してフロントからサーバーサイドまでの技術理解を満遍なく深めるために作成した。
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## データベース設計
