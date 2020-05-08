@@ -6,7 +6,7 @@
  2. Activestorageとimageuploader、gem`carrierwave`を用いたサムネイル昨日の実装
  3. gem`devise`を用いたログイン機能の実装
  4. gem`acts-as-taggable-on`を**用いない**タグ機能の実装
- 5. scssを使った装飾
+ 5. Html、SCSSを使った装飾
 
 ## 使用した技術
 * 言語: Html/SCSS/Ruby 2.5.1/SQL
