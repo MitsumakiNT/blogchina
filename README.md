@@ -81,4 +81,7 @@
 |------|----|-------|
 |article_id|integer||
 |map_id|integer||
+### Association
+- belongs_to :article
+- belongs_to :map
 
