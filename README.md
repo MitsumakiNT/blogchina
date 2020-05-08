@@ -18,3 +18,48 @@
 > ブログアプリを通してフロントからサーバーサイドまでの技術理解を満遍なく深めるために作成した。
 
 ## データベース設計
+### Articlesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|title|string||
+|body|text||
+|status|integer|null: false|
+|time|datetime||
+
+### Activestorage_blobsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|key|string|null: false|
+|filename|string|null: false|
+|content_type|string||
+|metadata|text||
+|byte_size|bigint|null: false|
+|checksum|string|null: false|
+
+### Activestorage_attachmentsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null :false|
+|record|references|null: false|
+|blob|references|null: false|
+
+### Action_text_rich_textsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|body|text|size: :long|
+|record|refernces|null: false, index: false, polymorphic: true|
+
+### Categoriesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|categories|stirng||
+
+### Articles_categoriesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|article_id|integer||
+|category_id|integer||
+
+### Mapsテーブル
+
