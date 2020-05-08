@@ -31,6 +31,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-rails' #binding.pry
 end
 
 group :development do
@@ -56,7 +57,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'ransack' #検索機能
 gem 'devise' #サイト内検索
 gem 'carrierwave' #画像アップロード
-gem 'pry-rails' #binding.pry
+
 gem 'kaminari' #ページネーション
 gem 'sprockets'
 gem 'actiontext'
