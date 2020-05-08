@@ -72,6 +72,9 @@
 |Column|Type|Options|
 |------|----|-------|
 |tag_name|string||
+### Association
+- has_many :mapguides, dependent: :destroy
+- has_many :articles, through: :mapguides
 
 ### Mapguidesテーブル
 |Column|Type|Options|
