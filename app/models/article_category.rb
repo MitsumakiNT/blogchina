@@ -1,3 +1,3 @@
-class ArticleCategory < ApplicationRecord
+class ArticlesCategory < ApplicationRecord
   
 end
