@@ -85,8 +85,9 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
-
+  #herokuデプロイに際してのアセットパイプラインの設定
   config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+  config.assets.initialize_on_precompile = false
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
