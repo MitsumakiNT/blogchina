@@ -58,6 +58,5 @@ gem 'ransack' #検索機能
 gem 'devise' #サイト内検索
 gem 'carrierwave' #画像アップロード
 gem 'kaminari' #ページネーション
-gem 'sprockets'
 gem 'actiontext'
 gem 'font-awesome-sass'
