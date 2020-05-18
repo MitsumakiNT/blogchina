@@ -16,17 +16,17 @@
       <%= form.file_field :image, accept: "image/png, image/jpeg, image/gif"%>
     </div>
 
-    <div class="tag">
-      <%= form.label :タグ%>
+    <div class="tag-form">
+      <%= form.label :タグ %>
       <%= form.text_field :tag_name, value: @tag_list%>
     </div>
 
-    <div class="field">
+    <div class="title-field">
       <%= form.label :タイトル %>
       <%= form.text_field :title %>
     </div>
 
-    <div class="field">
+    <div class="article-field">
       <%= form.label :記事 %>
       <%= form.rich_text_area :content %>
     </div>
