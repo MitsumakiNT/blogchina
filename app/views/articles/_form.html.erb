@@ -10,28 +10,29 @@
       </ul>
     </div>
   <% end %>
+  <div class="form-wrapper">
+    <div class = "image-form">
+      <%= form.label :サムネイル %>
+      <%= form.file_field :image, accept: "image/png, image/jpeg, image/gif"%>
+    </div>
 
-  <div class = "image">
-    <%= form.label :サムネイル %>
-    <%= form.file_field :image, accept: "image/png, image/jpeg, image/gif"%>
-  </div>
+    <div class="tag">
+      <%= form.label :タグ%>
+      <%= form.text_field :tag_name, value: @tag_list%>
+    </div>
 
-  <div class="tag">
-    <%= form.label :タグ%>
-    <%= form.text_field :tag_name, value: @tag_list%>
-  </div>
+    <div class="field">
+      <%= form.label :タイトル %>
+      <%= form.text_field :title %>
+    </div>
 
-  <div class="field">
-    <%= form.label :タイトル %>
-    <%= form.text_field :title %>
-  </div>
+    <div class="field">
+      <%= form.label :記事 %>
+      <%= form.rich_text_area :content %>
+    </div>
 
-  <div class="field">
-    <%= form.label :記事 %>
-    <%= form.rich_text_area :content %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
   </div>
 <% end %>
