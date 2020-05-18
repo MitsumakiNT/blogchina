@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
     if params[:map_id]
       @map_list = Map.all
       @map = Map.find(params[:map_id])
-      @articles = @map.articles.order(created_at: :desc).page(params[page]).per(8)
+      @articles = @map.articles.order(created_at: :desc).page(params[page]).per(5)
       @articles_side = Article.order(created_at: :desc)
     else
       @map_list = Map.all
