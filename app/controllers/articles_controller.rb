@@ -12,7 +12,7 @@ class ArticlesController < ApplicationController
       @articles_side = Article.order(created_at: :desc)
     else
       @map_list = Map.all
-      @articles = Article.order(created_at: :desc).page(params[:page]).per(8)
+      @articles = Article.order(created_at: :desc).page(params[:page]).per(5)
       @articles_side = Article.order(created_at: :desc)
     end
     respond_to do |format|
