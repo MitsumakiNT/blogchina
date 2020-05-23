@@ -60,3 +60,4 @@ gem 'carrierwave' #画像アップロード
 gem 'kaminari' #ページネーション
 gem 'actiontext'
 gem 'font-awesome-sass'
+gem 'sprockets'
