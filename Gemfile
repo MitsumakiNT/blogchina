@@ -57,7 +57,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'ransack' #検索機能
 gem 'devise' #サイト内検索
 gem 'carrierwave' #画像アップロード
-gem 'kaminari' #ページネーション
+gem 'kaminari','~> 1.2.1' #ページネーション
 gem 'actiontext'
 gem 'font-awesome-sass'
 gem 'sprockets'
