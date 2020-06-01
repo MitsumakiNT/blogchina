@@ -61,3 +61,4 @@ gem 'kaminari','~> 1.2.1' #ページネーション
 gem 'actiontext'
 gem 'font-awesome-sass'
 gem 'sprockets'
+gem 'ancestry' #カテゴリー機能
