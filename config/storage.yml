@@ -7,12 +7,12 @@ local:
   root: <%= Rails.root.join("storage") %>
 
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key) #S3のバケットを指定
-amazon:
-  service: S3
-  access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
-  secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
-  region: ap-northeast-1 #東京！
-  bucket: your_own_bucket #後で自分で作成したバケットの名前を登録
+# amazon:
+#   service: S3
+#   access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
+#   secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
+#   region: ap-northeast-1 #東京！
+#   bucket: your_own_bucket #後で自分で作成したバケットの名前を登録
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:
